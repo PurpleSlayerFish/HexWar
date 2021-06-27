@@ -36,9 +36,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\HubNavigationScript.cs" />
-     <Compile Include="Assets\Scripts\CampScript.cs" />
-     <Compile Include="Assets\Scripts\GameLoadingScript.cs" />
+     <Compile Include="Assets\Scripts\HubNavigationController.cs" />
+     <Compile Include="Assets\Scripts\HexagonMovementController.cs" />
+     <Compile Include="Assets\Scripts\CampController.cs" />
+     <Compile Include="Assets\Scripts\GameLoadingController.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -627,6 +628,9 @@
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>C:/Users/PurpleSlayerFish.PSY-SANCTUARY/Desktop/HexWar/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+        <HintPath>C:/Users/PurpleSlayerFish.PSY-SANCTUARY/Desktop/HexWar/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>C:/Users/PurpleSlayerFish.PSY-SANCTUARY/Desktop/HexWar/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -650,6 +654,9 @@
     </Reference>
     <Reference Include="VSSettingsProvider">
         <HintPath>C:/Users/PurpleSlayerFish.PSY-SANCTUARY/Desktop/HexWar/Library/ScriptAssemblies/VSSettingsProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>C:/Users/PurpleSlayerFish.PSY-SANCTUARY/Desktop/HexWar/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
         <HintPath>C:/Users/PurpleSlayerFish.PSY-SANCTUARY/Desktop/HexWar/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>

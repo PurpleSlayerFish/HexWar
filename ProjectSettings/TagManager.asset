@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - FoW
   layers:
   - Default
   - TransparentFX
@@ -40,4 +41,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Terrain
+    uniqueID: 3749937133
+    locked: 0
+  - name: Units
+    uniqueID: 2348452433
+    locked: 0
+  - name: FoW
+    uniqueID: 601208033
     locked: 0
