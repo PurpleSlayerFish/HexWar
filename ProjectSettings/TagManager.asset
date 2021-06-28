@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - FoW
+  - Obstacles
   layers:
   - Default
   - TransparentFX
@@ -44,6 +45,9 @@ TagManager:
     locked: 0
   - name: Terrain
     uniqueID: 3749937133
+    locked: 0
+  - name: Obstacles
+    uniqueID: 3379267885
     locked: 0
   - name: Units
     uniqueID: 2348452433

@@ -11,7 +11,7 @@ public class HexagonMovementController : MonoBehaviour
 
     private Vector3 newPosition;
     private Vector3Int newCellPos;
-    private Tilemap battleField;
+    private Tilemap terrain;
     private RaycastHit2D hit => Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
     private bool hasMoved;
 
@@ -31,21 +31,23 @@ public class HexagonMovementController : MonoBehaviour
     private void MoveToMouseClick(){
         if(hit.collider != null && hit.collider is TilemapCollider2D)
         {
-            battleField = hit.collider.GetComponent<Tilemap>();
-            newCellPos = battleField.WorldToCell(new Vector3(hit.point.x, hit.point.y, battleField.transform.position.z));
-            SetNewPosition(battleField.CellToWorld(newCellPos)); 
-            UpdateFogOfWar();
+            // Debug.Log(hit.transform.tag);
+            if(hit.transform.tag != "Obstacles"){
+                terrain = hit.collider.GetComponent<Tilemap>();
+                newCellPos = terrain.WorldToCell(new Vector3(hit.point.x, hit.point.y, terrain.transform.position.z));
+                SetNewPosition(terrain.CellToWorld(newCellPos)); 
+                UpdateFogOfWar();
+                // Debug.Log("Player coords: " + newCellPos);
+            }
         }
     }
 
     private void UpdateFogOfWar(){
         Vector3Int currentPlayerTile = fogOfWar.WorldToCell(transform.position);
-
         for (int x =- vision; x <= vision; x++){
             for (int y =- vision; y <= vision; y++){
-                //if (fogOfWar.GetTile(currentPlayerTile + new Vector3Int(x, y, 0)) != null)
+                if (fogOfWar.GetTile(currentPlayerTile + new Vector3Int(x, y, 0)) != null)
                     fogOfWar.SetTile(currentPlayerTile + new Vector3Int(x, y, 0), null);
-                Debug.Log(currentPlayerTile + new Vector3Int(x, y, 0));
             }
         }
     }
