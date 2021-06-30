@@ -323,8 +323,6 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
-"Assets/Libs/UnityPathFinding2D-master/Example.cs"
-"Assets/Libs/UnityPathFinding2D-master/PathFinding2D.cs"
 "Assets/Scripts/AI/NavMeshAgentController.cs"
 "Assets/Scripts/CampController.cs"
 "Assets/Scripts/GameLoadingController.cs"

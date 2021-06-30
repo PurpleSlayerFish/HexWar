@@ -6,6 +6,9 @@ TagManager:
   tags:
   - FoW
   - Obstacles
+  - Water
+  - Terrain
+  - ActionRadius
   layers:
   - Default
   - TransparentFX
@@ -43,8 +46,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Water
+    uniqueID: 2181638397
+    locked: 0
   - name: Terrain
     uniqueID: 3749937133
+    locked: 0
+  - name: Objects
+    uniqueID: 2288346063
     locked: 0
   - name: Obstacles
     uniqueID: 3379267885
@@ -54,4 +63,7 @@ TagManager:
     locked: 0
   - name: FoW
     uniqueID: 601208033
+    locked: 0
+  - name: ActionRadius
+    uniqueID: 3269593077
     locked: 0

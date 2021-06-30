@@ -37,12 +37,10 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\HubNavigationController.cs" />
+     <Compile Include="Assets\Scripts\AI\NavMeshAgentController.cs" />
      <Compile Include="Assets\Scripts\HexagonMovementController.cs" />
      <Compile Include="Assets\Scripts\CampController.cs" />
      <Compile Include="Assets\Scripts\GameLoadingController.cs" />
-     <Compile Include="Assets\Libs\UnityPathFinding2D-master\Example.cs" />
-     <Compile Include="Assets\Libs\UnityPathFinding2D-master\PathFinding2D.cs" />
-     <Compile Include="Assets\Scripts\AI\NavMeshAgentController.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -684,13 +682,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{aec965f7-24e2-a053-cf24-4d90176640b0}</Project>
-      <Name>NavMeshComponents</Name>
-    </ProjectReference>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
       <Project>{483aeebf-d3cb-c279-4acf-005667386780}</Project>
       <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{aec965f7-24e2-a053-cf24-4d90176640b0}</Project>
+      <Name>NavMeshComponents</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
