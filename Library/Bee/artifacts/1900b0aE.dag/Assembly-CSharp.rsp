@@ -326,8 +326,10 @@
 "Assets/Scripts/AI/NavMeshAgentController.cs"
 "Assets/Scripts/CampController.cs"
 "Assets/Scripts/GameLoadingController.cs"
+"Assets/Scripts/Global/TilemapService.cs"
 "Assets/Scripts/HexagonMovementController.cs"
 "Assets/Scripts/HubNavigationController.cs"
+"Assets/Scripts/Map/FoWController.cs"
 -langversion:8.0
 
 /deterministic

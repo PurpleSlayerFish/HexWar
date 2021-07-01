@@ -37,7 +37,10 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\HubNavigationController.cs" />
+     <Compile Include="Assets\Scripts\Map\ActionZoneController.cs" />
      <Compile Include="Assets\Scripts\AI\NavMeshAgentController.cs" />
+     <Compile Include="Assets\Scripts\Global\TilemapService.cs" />
+     <Compile Include="Assets\Scripts\Map\FoWController.cs" />
      <Compile Include="Assets\Scripts\HexagonMovementController.cs" />
      <Compile Include="Assets\Scripts\CampController.cs" />
      <Compile Include="Assets\Scripts\GameLoadingController.cs" />
