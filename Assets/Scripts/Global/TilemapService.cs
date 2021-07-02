@@ -58,9 +58,9 @@ public class TilemapService : MonoBehaviour{
         }
     }
 
-    // Заполняет тайл
+    // Заполняет тайл. Раньше было оптимизировано, но тогда actionZone не работает
     private void FillTile(Tilemap tilemap, Tile tile, Vector3Int tilePosition){
-        if (tilemap.GetTile(tilePosition) != null)
+        // if (tilemap.GetTile(tilePosition) != null)
             tilemap.SetTile(tilePosition, tile);
     }
 }
